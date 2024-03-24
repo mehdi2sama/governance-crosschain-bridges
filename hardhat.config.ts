@@ -27,7 +27,7 @@ import {
 } from './helpers/types';
 import { NETWORKS_RPC_URL } from './helper-hardhat-config';
 
-const SKIP_LOAD = process.env.SKIP_LOAD === 'true';
+const SKIP_LOAD = process.env.SKIP_LOAD === 'false';
 const TASK_FOLDERS = ['deploy', 'governance', 'l2', 'misc', 'setup', 'verify'];
 if (!SKIP_LOAD) {
   TASK_FOLDERS.forEach((folder) => {
